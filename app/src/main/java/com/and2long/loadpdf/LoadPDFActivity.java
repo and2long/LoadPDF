@@ -3,6 +3,7 @@ package com.and2long.loadpdf;
 import android.graphics.Canvas;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 
 import com.joanzapata.pdfview.PDFView;
@@ -26,6 +27,9 @@ public class LoadPDFActivity extends AppCompatActivity  implements OnPageChangeL
         setContentView(R.layout.activity_loadpdf);
 
         setTitle("本地加载");
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
+
         pdfView = (PDFView) findViewById( R.id.pdfView );
 
         //从assets目录读取pdf

@@ -30,8 +30,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setTitle("加载PDF");
         Button load1 = (Button) findViewById(R.id.load1);
         Button load2 = (Button) findViewById(R.id.load2);
+        Button load3 = (Button) findViewById(R.id.load3);
         load1.setOnClickListener(this);
         load2.setOnClickListener(this);
+        load3.setOnClickListener(this);
     }
 
 
@@ -46,6 +48,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 intent = new Intent(this, LoadPDFActivity.class);
                 startActivity(intent);
                 break;
+            case R.id.load3:
+                intent = new Intent(this, LoadPDF2Activity.class);
+                startActivity(intent);
+                break;
+
         }
     }
 }

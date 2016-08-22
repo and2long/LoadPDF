@@ -22,6 +22,7 @@ public class LoadPDFOnlineActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_loadpdfonline);
         setTitle("在线加载");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         mWebView = (WebView) findViewById(R.id.webView);
         loadPDF();
     }

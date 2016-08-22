@@ -18,8 +18,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoadPDFActivity" />
-        <activity android:name=".LoadPDFOnlineActivity" />
+        <activity android:name=".LoadPDFActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".LoadPDF2Activity"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".LoadPDFOnlineActivity"
+            android:parentActivityName=".MainActivity"/>
     </application>
 
 </manifest>

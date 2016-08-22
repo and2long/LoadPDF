@@ -15,5 +15,10 @@
         android:id="@+id/load2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="本地加载" />
+        android:text="本地加载(翻页显示)" />
+    <Button
+        android:id="@+id/load3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="本地加载(滚动显示)" />
 </LinearLayout>
